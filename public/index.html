@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Balloons </title>
+    <link href="style.css" rel = "stylesheet">
+</head>
+<body>
+    <body>
+        <div class="form"><form>
+            <div class="section">
+                <label for="name">Your Name
+                <input type="text" id="name"></label>
+            </div>
+            <div class="section">
+                <label>Current City
+                <input type="text" id="location"></label>
+            </div>
+            <div class="section">
+                <label>Personal Mood
+                <input type="text" id="mood"></label>
+            </div>
+            <a class="enterbutton" onclick="myFunction()">
+                Continue
+            </a>
+        </form></div>
+        <div id ="newsection" STYLE ="display:none">
+            <p class ="project_heading" id="city"> </p>
+            <p class= "project_subheading" id="temp"> </p>
+            <p class= "project_data" id="weather"> </p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+        <script src="app.js"></script>
+
+        <section id="text">
+            <div id="paper">
+                <img src="paper.jpeg">
+            </div>
+            <h1>Inside this balloon:</h1>
+            <div class="display-data">
+                <p id="name-display">[Who]</p>
+                <p id="mood-display">[Mood]</p>
+                <p id="loc-display">[Where]</p>
+                <p id="temp-display">[Temp]</p>
+                <p id="weather-display">[Weather]</p>
+                <button id="closeform">Close</button>
+            </div>
+            
+        </section>
+</body>
+</html>
